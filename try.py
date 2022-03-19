@@ -1,25 +1,7 @@
-trkdfjdkfj
+from utils import create_challengeset
 
-FileNotFoundError
+adjectives = ['round', 'square', 'triangular']
+template = 'the woman kicked the {adj} ball.'
 
-def test_function(foo, bar):
-    """
-
-    Args:
-        foo (_type_): _description_
-        bar (_type_): _description_
-    """
-    x = 0
-    y = 'this is a string'
-
-    for i in y:
-        print(i)
-
-    if x > 2:
-        try:
-            x+2
-        except:
-            x-2
-    
-    return y+x
+create_challengeset('trial_challengeset.csv', template, 'ARG0', input_list=adjectives)
 
