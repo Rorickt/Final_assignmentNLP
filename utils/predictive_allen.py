@@ -1,9 +1,11 @@
 from allennlp_models.pretrained import load_predictor
+from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
+import matplotlib.pyplot as plt
 import csv
 
 
 def predict_sents(challengeset, model, pred_num, word_num):
-    """_summary_
+    """Use an AllenNLP model to predict the semantic roles of each sentence in the challenge set
 
     Args:
         challengeset (list): List of strings containing sentences
@@ -30,6 +32,21 @@ def predict_sents(challengeset, model, pred_num, word_num):
             predictions.append(predicted_arg)
             gold_labels.append(row[1])
             if predicted_arg != row[1]:
-                faulty_preds.append(prediction['description'])
+                faulty_preds.append(prediction['verbs'][pred_num]['description'])
 
     return predictions, gold_labels, full_preds, faulty_preds
+
+def output_conf_matr(filepath, gold_args, pred_args):
+    """_summary_
+
+    Args:
+        filepath (_type_): _description_
+        gold_args (_type_): _description_
+        pred_args (_type_): _description_
+    """
+    cm = confusion_matrix(gold_args, pred_args)
+
+    disp = ConfusionMatrixDisplay(confusion_matrix=cm)
+                        # display_labels=set(pred_args)) doesn't work right somehow
+    disp.plot()
+    plt.savefig(filepath, dpi=600)
