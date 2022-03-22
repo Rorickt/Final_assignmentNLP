@@ -1,7 +1,7 @@
 from allennlp_models.pretrained import load_predictor
 from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
 import matplotlib.pyplot as plt
-import csv
+import csv, numpy as np
 
 
 def predict_sents(challengeset, model, pred_num, word_num):
@@ -45,8 +45,10 @@ def output_conf_matr(filepath, gold_args, pred_args):
         pred_args (_type_): _description_
     """
     cm = confusion_matrix(gold_args, pred_args)
-
+    cm = np.array([cm[0]])
     disp = ConfusionMatrixDisplay(confusion_matrix=cm)
                         # display_labels=set(pred_args)) doesn't work right somehow
     disp.plot()
     plt.savefig(filepath, dpi=600)
+
+    

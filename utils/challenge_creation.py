@@ -1,7 +1,7 @@
 from checklist.editor import Editor
 
 
-def create_challengeset(template, samples=100, input_list=None, input_name=None):
+def create_challengeset(template, samples=50, input_list=None, input_name=None):
     
     editor = Editor()
 
