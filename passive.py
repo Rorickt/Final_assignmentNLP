@@ -37,13 +37,13 @@ for model in models:
     for file_ in files:
         if '0' in file_:
             predictions, gold_labels, full_preds, erred_preds= predict_sents('challenge_sets/passive/'+file_, model, 1, 4 )
-            j_dumps('challenge_sets/passive/'+file_+'_output'+model[-4:]+'.json', full_preds)
-            j_dumps('challenge_sets/passive/'+file_+'_output_erut'+model[-4:]+'.json', erred_preds)
-            output_conf_matr('results/passive/'+file_+model[-4:]+'_results.pdf', gold_labels, predictions)
+            j_dumps('predictions/passive/'+file_+'_output'+model[-4:]+'.json', full_preds)
+            j_dumps('predictions/passive/'+file_+'_output_erut'+model[-4:]+'.json', erred_preds)
+            output_conf_matr('results/passive/'+file_+model[-4:]+'_results.txt', gold_labels, predictions)
         else:
             predictions, gold_labels, full_preds, erred_preds= predict_sents('challenge_sets/passive/'+file_, model, 1, 0 )
-            j_dumps('challenge_sets/passive/'+file_+'_outpuut'+model[-4:]+'.json', full_preds)
-            j_dumps('challenge_sets/passive/'+file_+'_output_erut'+model[-4:]+'.json', erred_preds)
-            output_conf_matr('results/passive/'+file_+model[-4:]+'_results.pdf', gold_labels, predictions) 
+            j_dumps('predictions/passive/'+file_+'_outpuut'+model[-4:]+'.json', full_preds)
+            j_dumps('predictions/passive/'+file_+'_output_erut'+model[-4:]+'.json', erred_preds)
+            output_conf_matr('results/passive/'+file_+model[-4:]+'_results.txt', gold_labels, predictions) 
 
 
