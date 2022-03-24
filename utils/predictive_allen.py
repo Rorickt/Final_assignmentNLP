@@ -45,7 +45,7 @@ def output_conf_matr(filepath, gold_args, pred_args):
         pred_args (_type_): _description_
     """
     cm = confusion_matrix(gold_args, pred_args)
-    cm = np.array([cm[0]])
+    # cm = np.array(cm[0])
     disp = ConfusionMatrixDisplay(confusion_matrix=cm)
                         # display_labels=set(pred_args)) doesn't work right somehow
     disp.plot()
