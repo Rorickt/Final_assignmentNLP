@@ -20,11 +20,8 @@ def create_manner():
     template_manner_mnr4= '{first_name} {mann} rode to the park last night.'
     # the gold label for the challengeset is a string of all combined SR labels (stripping 'B/I-')
     full_mann_mnr = editor.template(template_manner_mnr1, mann=mann, meta=True, nsamples=25, remove_duplicates=True)
-    write_to_file('challenge_sets/manner/full_mann_mnr.csv', full_mann_mnr.data, 'ARG0ARGM-MNRVARGM-DIRARGM-DIRARGM-DIRARGM-TMPARGM-TMPO')
     full_mann_mnr + editor.template(template_manner_mnr2, mann=mann, meta=True, nsamples=25, remove_duplicates=True)
-    write_to_file('challenge_sets/manner/full_mann_mnr.csv', full_mann_mnr.data, 'ARG0ARGM-MNRVARGM-DIRARGM-DIRARGM-DIRARGM-TMPARGM-TMPO')
     full_mann_mnr + editor.template(template_manner_mnr3, mann=mann, meta=True, nsamples=25, remove_duplicates=True)
-    write_to_file('challenge_sets/manner/full_mann_mnr.csv', full_mann_mnr.data, 'ARG0ARGM-MNRVARGM-DIRARGM-DIRARGM-DIRARGM-TMPARGM-TMPO')
     full_mann_mnr + editor.template(template_manner_mnr4, mann=mann, meta=True, nsamples=25, remove_duplicates=True)
     write_to_file('challenge_sets/manner/full_mann_mnr.csv', full_mann_mnr.data, 'ARG0ARGM-MNRVARGM-DIRARGM-DIRARGM-DIRARGM-TMPARGM-TMPO')
 

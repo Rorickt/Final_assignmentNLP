@@ -1,7 +1,8 @@
 from allennlp_models.pretrained import load_predictor
-from sklearn.metrics import accuracy_score
+from sklearn.metrics import accuracy_score, confusion_matrix
 import matplotlib.pyplot as plt
 import csv, numpy as np
+import logging
 
 
 def predict_sents(challengeset, model, pred_num, word_num, variance=False):
@@ -16,6 +17,20 @@ def predict_sents(challengeset, model, pred_num, word_num, variance=False):
     Returns:
         list: list containing predicted labels, gold labels, full prediciton from model and erred predictions
     """
+
+    ## remove output messages:
+    logging.getLogger('allennlp.common.params').disabled = True 
+    logging.getLogger('allennlp.nn.initializers').disabled = True 
+    logging.getLogger('allennlp.modules.token_embedders.embedding').disabled = True 
+    logging.getLogger('urllib3.connectionpool').disabled = True 
+    logging.getLogger('allennlp.common.plugins').disabled = True 
+    logging.getLogger('allennlp.common.model_card').disabled = True 
+    logging.getLogger('allennlp.models.archival').disabled = True 
+    logging.getLogger('allennlp.data.vocabulary').disabled = True 
+    logging.getLogger('cached_path').disabled = True
+
+
+
     srl_predictor = load_predictor(model)
 
     full_preds = []
@@ -63,7 +78,15 @@ def output_conf_matr(filepath, gold_args, pred_args):
         gold_args (_type_): _description_
         pred_args (_type_): _description_
     """
+
+    accuracy = str(accuracy_score(gold_args, pred_args))
+    labels = sorted(set(pred_args))
+    confusion = str(confusion_matrix(gold_args, pred_args, labels=labels)[0])
+
     with open(filepath, 'w', encoding='utf8') as f:
-        f.write(str(accuracy_score(gold_args, pred_args)))
+        f.write(accuracy)
+        f.write('\n')
+        f.write(str(labels))
+        f.write(confusion)
 
     
