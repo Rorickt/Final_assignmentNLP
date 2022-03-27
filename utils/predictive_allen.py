@@ -40,8 +40,7 @@ def predict_sents(challengeset, model, pred_num, word_num, variance=False):
 
     with open(challengeset, 'r', encoding='utf-8') as file:
         file = csv.reader(file, delimiter='\t')
-        if variance:
-            
+        if variance == True:
             for row in file:
                 predicted_arg = ''
                 prediction = srl_predictor.predict(row[0])
@@ -55,18 +54,19 @@ def predict_sents(challengeset, model, pred_num, word_num, variance=False):
                 predictions.append(predicted_arg)
                 gold_labels.append(row[1])
                 if predicted_arg != row[1]:
-                    faulty_preds.append(prediction['verbs'][pred_num]['description'])
+                    
+                    faulty_preds.append((prediction['verbs'][pred_num]['description'],predicted_arg))
 
 
         else:
             for row in file:
                 prediction = srl_predictor.predict(row[0])
                 full_preds.append(prediction)
-                predicted_arg = prediction['verbs'][pred_num]['tags'][word_num].strip('B-').strip('I-')
+                predicted_arg = prediction['verbs'][pred_num]['tags'][word_num].strip('B-').strip('I-').strip('R-')
                 predictions.append(predicted_arg)
                 gold_labels.append(row[1])
                 if predicted_arg != row[1]:
-                    faulty_preds.append(prediction['verbs'][pred_num]['description'])
+                    faulty_preds.append((prediction['verbs'][pred_num]['description'],predicted_arg))
 
     return predictions, gold_labels, full_preds, faulty_preds
 
@@ -81,12 +81,21 @@ def output_conf_matr(filepath, gold_args, pred_args):
 
     accuracy = str(accuracy_score(gold_args, pred_args))
     labels = sorted(set(pred_args))
-    confusion = str(confusion_matrix(gold_args, pred_args, labels=labels)[0])
 
-    with open(filepath, 'w', encoding='utf8') as f:
-        f.write(accuracy)
-        f.write('\n')
-        f.write(str(labels))
-        f.write(confusion)
+    try:
+        confusion = confusion_matrix(gold_args, pred_args, labels=labels)
+        for row in confusion:
+            if row[0] >0:
+                confusion = str(row)
+
+        with open(filepath, 'w', encoding='utf8') as f:
+            f.write(accuracy)
+            f.write('\n')
+            f.write(str(labels))
+            f.write(confusion)
+    except:
+        with open(filepath, 'w', encoding='utf8') as f:
+            f.write(accuracy)
+
 
     

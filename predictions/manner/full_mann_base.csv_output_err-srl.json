@@ -1,1 +1,1 @@
-["[ARG0: Anthony] [V: walked] [ARGM-GOL: to the store] [ARGM-TMP: last night] .", "[ARG0: Susan] [V: walked] [ARGM-GOL: to the store] [ARGM-TMP: last night] ."]
+[["[ARG0: Betty] [V: walked] [ARGM-GOL: to the store] .", "ARG0VARGM-GOLARGM-GOLARGM-GOLO"], ["[ARGM-MNR: Kathy] [V: walked] [ARGM-DIR: to the store] .", "ARGM-MNRVARGM-DIRARGM-DIRARGM-DIRO"], ["[ARG0: Louis] [V: walked] [ARGM-GOL: to the store] .", "ARG0VARGM-GOLARGM-GOLARGM-GOLO"]]
