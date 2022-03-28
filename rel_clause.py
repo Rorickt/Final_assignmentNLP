@@ -10,7 +10,7 @@ def create_elips():
     object_ = ['bird','ball','stick','plane','girl','guy','cat','dog','car', 'bike', 'rabbit',
     'tree', 'sign']
     ## predicate ellipsis
-    template_rel_clause_who = '{first_name} kicked a {object_} and {first_name1} a {object_}'
+    template_rel_clause_who = '{first_name} kicked a {object_} and {first_name1} a {object_1}'
     pred_elips_ = editor.template(template_rel_clause_who, object_=object_, meta=True, nsamples=100, remove_duplicates=True)
     write_to_file('challenge_sets/ellipsis/pred_elips.csv', pred_elips_.data, 'ARG0')
 
