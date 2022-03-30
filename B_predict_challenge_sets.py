@@ -24,6 +24,13 @@ def main(argv=None):
         predict_roleset()
     elif test_to_run == '5':
         predict_theme_goal()
+    elif test_to_run == '6':
+        predict_passive() 
+        predict_manner()
+        predict_elips()
+        predict_roleset()
+        predict_theme_goal()
+
     else:
         'Invalid or no argument given. Please enter a number between 1-5 to select which challenge set to test.'
 
