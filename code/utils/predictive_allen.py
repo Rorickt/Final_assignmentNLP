@@ -1,6 +1,5 @@
 from allennlp_models.pretrained import load_predictor
 from sklearn.metrics import accuracy_score, confusion_matrix
-import matplotlib.pyplot as plt
 import csv, numpy as np
 import logging
 
