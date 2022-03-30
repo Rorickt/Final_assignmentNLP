@@ -6,8 +6,8 @@ from theme_goal import create_theme_goal
 
 # Running this file creates all challenge sets for all 5 cpaabilities and their tests
 
-create_manner()
-create_passive()
+# create_manner()
+# create_passive()
 create_elips()
-create_roleset()
-create_theme_goal()
+# create_roleset()
+# create_theme_goal()
