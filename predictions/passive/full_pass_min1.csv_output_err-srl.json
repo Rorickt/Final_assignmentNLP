@@ -1,1 +1,17 @@
-[["[ARG2: Abdul] was [V: threatened] [ARG0: by someone] [ARGM-TMP: last night] .", "ARG2"], ["[ARG2: Javadd] was [V: threatened] [ARG0: by someone] [ARGM-TMP: last night] .", "ARG2"], ["[ARG0: Abdul] was [V: beheaded] by [ARG0: someone] [ARGM-TMP: last night] .", "ARG0"], ["[ARG2: Ramazan] was [V: threatened] [ARG0: by someone] [ARGM-TMP: last night] .", "ARG2"], ["Zamir was [V: mugged] [ARG0: by someone] [ARGM-TMP: last night] .", "O"], ["Eris was [V: mugged] [ARG0: by someone] [ARGM-TMP: last night] .", "O"], ["Burhan was [V: mugged] [ARG0: by someone] [ARGM-TMP: last night] .", "O"], ["Fawzia was [V: beheaded] [ARG0: by someone] [ARGM-TMP: last night] .", "O"], ["[ARG2: Bernard] was [V: threatened] [ARG0: by someone] [ARGM-TMP: last night] .", "ARG2"], ["[ARG0: Ali] was [V: mugged] [ARG0: by someone] [ARGM-TMP: last night] .", "ARG0"], ["[ARG2: Abdul] was [V: threatened] [ARG0: by someone] [ARGM-TMP: last night] .", "ARG2"], ["[ARG0: Abd] was [V: beheaded] [ARG0: by someone] [ARGM-TMP: last night] .", "ARG0"], ["Daoud was [V: assaulted] [ARG0: by someone] [ARGM-TMP: last night] .", "O"], ["Milad was [V: beheaded] [ARG0: by someone] [ARGM-TMP: last night] .", "O"], ["[ARG2: Bilal] was [V: threatened] [ARG0: by someone] [ARGM-TMP: last night] .", "ARG2"], ["Nour was [V: mugged] [ARG0: by someone] [ARGM-TMP: last night] .", "O"], ["Daoud was [V: raped] [ARG0: by someone] [ARGM-TMP: last night] .", "O"]]
+[["[ARG2: Abdul] was [V: threatened] [ARG0: by someone] [ARGM-TMP: last night] .", "ARG2"], 
+["[ARG2: Javadd] was [V: threatened] [ARG0: by someone] [ARGM-TMP: last night] .", "ARG2"], 
+["[ARG0: Abdul] was [V: beheaded] by [ARG0: someone] [ARGM-TMP: last night] .", "ARG0"], 
+["[ARG2: Ramazan] was [V: threatened] [ARG0: by someone] [ARGM-TMP: last night] .", "ARG2"], 
+["Zamir was [V: mugged] [ARG0: by someone] [ARGM-TMP: last night] .", "O"], 
+["Eris was [V: mugged] [ARG0: by someone] [ARGM-TMP: last night] .", "O"], 
+["Burhan was [V: mugged] [ARG0: by someone] [ARGM-TMP: last night] .", "O"], 
+["Fawzia was [V: beheaded] [ARG0: by someone] [ARGM-TMP: last night] .", "O"], 
+["[ARG2: Bernard] was [V: threatened] [ARG0: by someone] [ARGM-TMP: last night] .", "ARG2"], 
+["[ARG0: Ali] was [V: mugged] [ARG0: by someone] [ARGM-TMP: last night] .", "ARG0"], 
+["[ARG2: Abdul] was [V: threatened] [ARG0: by someone] [ARGM-TMP: last night] .", "ARG2"], 
+["[ARG0: Abd] was [V: beheaded] [ARG0: by someone] [ARGM-TMP: last night] .", "ARG0"], 
+["Daoud was [V: assaulted] [ARG0: by someone] [ARGM-TMP: last night] .", "O"], 
+["Milad was [V: beheaded] [ARG0: by someone] [ARGM-TMP: last night] .", "O"], 
+["[ARG2: Bilal] was [V: threatened] [ARG0: by someone] [ARGM-TMP: last night] .", "ARG2"], 
+["Nour was [V: mugged] [ARG0: by someone] [ARGM-TMP: last night] .", "O"], 
+["Daoud was [V: raped] [ARG0: by someone] [ARGM-TMP: last night] .", "O"]]

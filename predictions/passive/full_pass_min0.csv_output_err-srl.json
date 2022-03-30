@@ -1,1 +1,10 @@
-[["[ARG2: someone] was [V: threatened] [ARGM-MNR: by Nilofar] [ARGM-TMP: last night] .", "ARGM-MNR"], ["[ARG1: someone] was [V: killed] [ARG2: by Saad] [ARGM-TMP: last night] .", "ARG2"], ["[ARG1: someone] was [V: beheaded] [ARGM-MNR: by Fatima] [ARGM-TMP: last night] .", "ARGM-MNR"], ["[ARG1: someone] was [V: cut] [ARG2: by Aryan] [ARGM-TMP: last night] .", "ARG2"], ["[ARG2: someone] was [V: threatened] [ARGM-MNR: by Sardar] [ARGM-TMP: last night] .", "ARGM-MNR"], ["[ARG2: someone] was [V: threatened] [ARGM-MNR: by Sabrina] [ARGM-TMP: last night] .", "ARGM-MNR"], ["[ARG1: someone] was [V: shot] [ARGM-MNR: by Yunus] [ARGM-TMP: last night] .", "ARGM-MNR"], ["[ARG1: someone] was [V: hit] [ARGM-MNR: by Sultan] [ARGM-TMP: last night] .", "ARGM-MNR"], ["[ARG2: someone] was [V: threatened] [ARGM-MNR: by Anahita] [ARGM-TMP: last night] .", "ARGM-MNR"], ["[ARG1: someone] was [V: hit] [ARGM-MNR: by Sima] [ARGM-TMP: last night] .", "ARGM-MNR"]]
+[["[ARG2: someone] was [V: threatened] [ARGM-MNR: by Nilofar] [ARGM-TMP: last night] .", "ARGM-MNR"], 
+["[ARG1: someone] was [V: killed] [ARG2: by Saad] [ARGM-TMP: last night] .", "ARG2"], 
+["[ARG1: someone] was [V: beheaded] [ARGM-MNR: by Fatima] [ARGM-TMP: last night] .", "ARGM-MNR"], 
+["[ARG1: someone] was [V: cut] [ARG2: by Aryan] [ARGM-TMP: last night] .", "ARG2"], 
+["[ARG2: someone] was [V: threatened] [ARGM-MNR: by Sardar] [ARGM-TMP: last night] .", "ARGM-MNR"], 
+["[ARG2: someone] was [V: threatened] [ARGM-MNR: by Sabrina] [ARGM-TMP: last night] .", "ARGM-MNR"], 
+["[ARG1: someone] was [V: shot] [ARGM-MNR: by Yunus] [ARGM-TMP: last night] .", "ARGM-MNR"], 
+["[ARG1: someone] was [V: hit] [ARGM-MNR: by Sultan] [ARGM-TMP: last night] .", "ARGM-MNR"], 
+["[ARG2: someone] was [V: threatened] [ARGM-MNR: by Anahita] [ARGM-TMP: last night] .", "ARGM-MNR"], 
+["[ARG1: someone] was [V: hit] [ARGM-MNR: by Sima] [ARGM-TMP: last night] .", "ARGM-MNR"]]
